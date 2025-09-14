@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html><body>
+<canvas id="canvas" width="144" height="144"></canvas>
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+const gradient = ctx.createRadialGradient(72, 72, 0, 72, 72, 72);
+gradient.addColorStop(0, '#4CAF50');
+gradient.addColorStop(1, '#2E7D32');
+ctx.fillStyle = gradient;
+ctx.fillRect(0, 0, 144, 144);
+ctx.fillStyle = '#FFFFFF';
+ctx.font = '86.39999999999999px Arial';
+ctx.textAlign = 'center';
+ctx.textBaseline = 'middle';
+ctx.fillText('🌿', 72, 72);
+canvas.toBlob(blob => {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'icon-144.png';
+  a.click();
+});
+</script>
+</body></html>

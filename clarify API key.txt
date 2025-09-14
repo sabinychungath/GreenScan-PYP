@@ -1,0 +1,8 @@
+clarify API key
+---------------
+Descriptive name: natureobjdetect-all-scopes
+key: 554a0303cb8c494f90827f35719591e9
+
+new key: 8c58365ad4c9445b9bcc4532e6577a2e
+
+personal token (used): f7594731d96d4315aebe454a77c86870
